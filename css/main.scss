@@ -1,0 +1,105 @@
+$color1: #4750B8;
+$color2: #5266C0;
+$color3: #6275CC;
+$color9: #ececec;
+$color10: #869ab8;
+$color11: #ffffff;
+
+$theme-colors: (
+    'color1': $color1,
+    'color2': $color2,
+    'color3': $color3,
+    'color9': $color9,
+    'color10': $color10,
+    'color11': $color11,
+);
+
+.btn-animate{
+    transition: 0.5s;
+}
+
+.html, .css, .js, .bootstrap, .sass, .laravel{
+    transition: 0.1s;
+    transition: color 0.5s linear; /* vendorless fallback */
+    -o-transition: color 0.5s linear; /* opera */
+    -ms-transition: color 0.5s linear; /* IE 10 */
+    -moz-transition: color 0.5s linear; /* Firefox */
+    -webkit-transition: color 0.5s linear; /*safari and chrome */
+}
+
+.html:hover{
+    color: #EF652A;
+}
+
+.css:hover{
+    color: #2864F0;
+}
+
+.js:hover{
+    color: #F7DF1E;
+}
+
+.bootstrap:hover{
+    color: #563D7C;
+}
+
+.sass:hover{
+    color: #CD6799;
+}
+
+.laravel:hover{
+    color: #FB503A;
+}
+
+.about-title>h3{
+    font-size: 1.3125rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.zone{
+    transform: perspective(600px) rotateY(-13deg);
+}
+
+.font-clean{
+    font-weight: 400;
+    line-height: 1.4;
+}
+.icon>svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.btn-animate:hover{
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/*
+.card>.card-img-top{
+    border-bottom-left-radius: 100% 15%;
+    border-bottom-right-radius: 100% 15%;
+}
+*/
+
+.animate{
+    transition: 0.5s;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+    .display-5 {
+        font-size: calc(1.375rem + 2.5vw);
+    }
+}
+
+$enable-responsive-font-sizes: true !important;
+$enable-rounded: true;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
